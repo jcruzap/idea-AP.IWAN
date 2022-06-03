@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    color: red;
+    text-align: center;
+    flex: 30px;
+    margin-bottom: 30px;
+    padding: 2px;
+}
+
+/* KeyFrame logo del index*/
+
+.scale-in-hor-center {
+    -webkit-animation: scale-in-hor-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+         animation: scale-in-hor-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+         
+         
+@-webkit-keyframes scale-in-hor-center {
+0% {
+   -webkit-transform: scaleX(0);
+         transform: scaleX(0);
+         opacity: 1;
+             }
+100% {
+   -webkit-transform: scaleX(1);
+         transform: scaleX(1);
+         opacity: 1;
+   }
+}
+@keyframes scale-in-hor-center {
+0% {
+   -webkit-transform: scaleX(0);
+         transform: scaleX(0);
+         opacity: 1;
+   }
+100% {
+   -webkit-transform: scaleX(1);
+         transform: scaleX(1);
+         opacity: 1;
+   }
+}
+.navegacion{
+   background-color: rgb(196, 24, 24);
+}
+
+.logoSizeClara{
+   height: 50px;
+   border-radius: 75px;
+}
+
+/* CSS Nosotros */
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    margin-top: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(145, 113, 214);
+    color: black;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 480px){
+
+
+/*Index responsive */
+
+body{
+    background-color: gray;
+    text-align: center;
+}
+header{
+    width: 100%;
+}
+
+.navnav{
+    width: 100%;
+}
+      
+.logoSizeClara{
+    height: auto;
+    width: 100%;
+}
+
+.nav {
+    height: 35px;
+    width: 100%;
+}
+
+
+
+footer{
+    width: 100%;
+    padding-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(145, 113, 214);
+    color: rgb(117, 121, 124);
+    position: static;
+    text-align: center;
+    font-size: 9px;
+}    
